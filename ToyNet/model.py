@@ -13,6 +13,7 @@ class NeuralNetwork:
         self.optimizer = None
         self.l1_lambda = 0  # L1 regularization strength
         self.l2_lambda = 0  # L2 regularization strength
+        self.history = {'loss': [], 'val_loss': []}
 
     def add(self, layer):
         """
@@ -159,20 +160,11 @@ class NeuralNetwork:
             # Calculate average epoch loss
             avg_epoch_loss = np.mean(epoch_losses)
 
-            """            # Validation with early stopping
+            self.history['loss'].append(avg_epoch_loss)
             if X_val is not None and y_val is not None:
                 val_predictions = self.forward(X_val, training=False)
                 val_loss = self.loss.compute(val_predictions, y_val)
-                
-                if val_loss < best_val_loss:
-                    best_val_loss = val_loss
-                    patience_counter = 0
-                else:
-                    patience_counter += 1
-                    
-                if patience_counter >= patience:
-                    print(f"\nEarly stopping at epoch {epoch + 1}")
-                    break """
+                self.history['val_loss'].append(val_loss)
    
             print(f"\nEpoch {epoch + 1}, Loss: {avg_epoch_loss:.4f}")
             

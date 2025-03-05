@@ -1,4 +1,4 @@
-from ToyNet import NeuralNetwork, Dense, ReLU, Sigmoid, Flatten, MeanSquaredError, GradientDescent, load_mnist, Adam
+from ToyNet.ToyNet import NeuralNetwork, Dense, ReLU, Sigmoid, Flatten, MeanSquaredError, GradientDescent, load_mnist, Adam
 import numpy as np
 import matplotlib.pyplot as plt
 
