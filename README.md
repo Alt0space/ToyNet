@@ -131,22 +131,6 @@ Ivan Murzin
 ## Acknowledgments
 - This project is inspired by modern deep learning frameworks while maintaining simplicity for educational purposes
 - Special thanks to the NumPy community for providing the foundation for this implementation
-```
 
-This README provides:
-1. Clear project description
-2. Feature list
-3. Installation instructions
-4. Usage examples
-5. Project structure
-6. Dependencies
-7. Contributing and license information
 
-You can customize it further by:
-- Adding more examples
-- Including performance benchmarks
-- Adding documentation links
-- Including test coverage information
-- Adding contact information
-- Including a roadmap for future features
 
