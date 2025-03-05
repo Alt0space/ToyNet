@@ -108,8 +108,8 @@ ToyNet/
 │   ├── optimizers.py  # Optimization algorithms
 │   └── utils.py       # Helper functions
 ├── examples/
-│   ├── autoencoder_example.py
-│   └── mnist_classification.py
+│   └─── autoencoder_example.py
+│   
 ├── requirements.txt
 └── README.md
 ```
